@@ -20,6 +20,6 @@ output "public_subnet_2_id" {
     value = data.aws_subnet_ids.public_2.id
 }
 */
-output "ec2_subnet_id" {
-    value = aws_subnet.private_1.id
-}
+#output "ec2_subnet_id" {
+#    value = aws_subnet.private_1.id
+#}

@@ -16,11 +16,10 @@ variable "secret_key" {
 #S3 Variable
 
 variable "s3_bucket" {
+  type    = string
+  default = "Name-of the bucket"
 }
-#variable "web_region_s3" {
-#  type = string
-  
-#}
+
 
 #ECR Variable
 variable repo_name {

@@ -31,5 +31,5 @@ module "ec2" {
     ec2_count = var.ec2_count
     ami_id = var.ami_id
     instance_type = var.instance_type
-    subnet_id = module.vpc
+    subnet_id = "${module.vpc.ec2_subnet_id}"
 }

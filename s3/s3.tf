@@ -4,7 +4,7 @@ In case, S3 bucket already exist then do not use this code.
 Apply the existing S3 bucket name in belo files. 
 
 */
-resource "aws_s3_bucket" "s3kgbucket1212" {
+resource "aws_s3_bucket" "devops-newbee-s3bucket" {
   bucket = var.s3_bucket
   versioning {
     enabled = true

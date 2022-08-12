@@ -20,7 +20,7 @@ resource "aws_iam_role" "eks-iam-role" {
 
   assume_role_policy = <<EOF
 {
-  "Version": "2022-08-12",
+  "Version": "2012-10-17",
   "Statement": [
     {
       "Effect": "Allow",
@@ -71,7 +71,7 @@ resource "aws_iam_role" "workernodes" {
         Service = "ec2.amazonaws.com"
       }
     }]
-    Version = "2022-08-12"
+    Version = "2012-10-17"
   })
 }
 

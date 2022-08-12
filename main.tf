@@ -38,4 +38,5 @@ module "eks" {
     source = ".//eks"
     subnet_id_1 = "${module.vpc.private1_subnet_id}"
     subnet_id_2 = "${module.vpc.private2_subnet_id}"
+    web_region = var.web_region
 }

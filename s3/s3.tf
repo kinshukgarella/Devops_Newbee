@@ -2,7 +2,7 @@
 #  region = var.web_region
 #}
 
-resource "aws_s3_bucket" "terraform_state" {
+resource "aws_s3_bucket" "s3kgbucket1212" {
   bucket = var.s3_bucket
   versioning {
     enabled = true

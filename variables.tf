@@ -40,10 +40,10 @@ variable "ami_id" {
 
 variable "instance_type" {
 }
-variable "subnet_id" {
-  type = string
+#variable "subnet_id" {
+#  type = string
 #  default = "aws_subnets.private_1.id"
-}
+#}
 
 //VPC Variable
 variable "vpc_cidr" {

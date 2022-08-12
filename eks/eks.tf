@@ -1,8 +1,8 @@
 terraform {
   backend "s3" {
-    bucket = "terraform-state-kinshukdevops"
-    key    = "eks-terraform-workernodes.tfstate"
-    region = "us-east-1"
+    bucket = var.s3_bucket
+    key    = "eks-workernodes.tfstate"
+    region = var.web_region
   }
   required_providers {
     aws = {

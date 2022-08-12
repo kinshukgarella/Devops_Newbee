@@ -8,3 +8,8 @@ variable "subnet_id_2" {
 #  default = "subnet-028dd9a9999b9794b"
 }
 
+variable "web_region" {
+    type = string
+  
+}
+

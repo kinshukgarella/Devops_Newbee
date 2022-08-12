@@ -14,7 +14,7 @@ terraform {
 
 # IAM Role for EKS to have access to the appropriate resources
 resource "aws_iam_role" "eks-iam-role" {
-  name = "devopsthehardway-eks-iam-role"
+  name = "Devops-Newbee-eks-iam-role"
 
   path = "/"
 
@@ -46,8 +46,8 @@ resource "aws_iam_role_policy_attachment" "AmazonEC2ContainerRegistryReadOnly-EK
 }
 
 ## Create the EKS cluster
-resource "aws_eks_cluster" "devopsthehardway-eks" {
-  name = "devopsthehardway-cluster"
+resource "aws_eks_cluster" "Devops-Newbee-eks" {
+  name = "Devops-Newbee-cluster"
   role_arn = aws_iam_role.eks-iam-role.arn
 
   vpc_config {

@@ -12,7 +12,7 @@ terraform {
 }
 
 
-# IAM Role for EKS to have access to the appropriate resources
+# IAM Role for EKS to have access to the appropriate resources.
 resource "aws_iam_role" "eks-iam-role" {
   name = "Devops-Newbee-eks-iam-role"
 

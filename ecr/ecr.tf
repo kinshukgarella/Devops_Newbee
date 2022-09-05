@@ -10,11 +10,6 @@ terraform {
     }
   }
 }
-
-#provider "aws" {
-#  region = var.web_region
-#}
-
 resource "aws_ecr_repository" "kinshukdevops-ecr-repo" {
   name                 = var.repo_name
   image_tag_mutability = "MUTABLE"

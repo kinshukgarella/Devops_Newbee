@@ -56,3 +56,15 @@ variable "default_subnet" {
   description = "Default Subnet 0.0.0.0/0"
   type = string
 }
+
+#variable "az1" {
+#  description = "Availability Zone 1"
+#  type = string
+
+#}
+
+#variable "az2" {
+#  description = "Availability Zone 2"
+#  type = string
+
+#}

@@ -31,5 +31,12 @@ module "ec2" {
     ec2_count = var.ec2_count
     ami_id = var.ami_id
     instance_type = var.instance_type
-    subnet_id = "${module.vpc.ec2_subnet_id}"
+    subnet_id = "${module.vpc.private1_subnet_id}"
+}
+
+module "eks" {
+    source = ".//eks"
+    subnet_id_1 = "${module.vpc.public2_subnet_id}"
+    subnet_id_2 = "${module.vpc.private1_subnet_id}"
+    web_region = var.web_region
 }

@@ -40,10 +40,10 @@ variable "ami_id" {
 
 variable "instance_type" {
 }
-variable "subnet_id" {
-  type = string
+#variable "subnet_id" {
+#  type = string
 #  default = "aws_subnets.private_1.id"
-}
+#}
 
 //VPC Variable
 variable "vpc_cidr" {
@@ -105,3 +105,13 @@ variable "default_subnet" {
   description = "Default Subnet 0.0.0.0/0"
   type = string
 }
+
+#variable "az1" {
+#  description = "Availability Zone 1"
+#  type = string
+#}
+
+#variable "az2" {
+#  description = "Availability Zone 2"
+#  type = string
+#}
